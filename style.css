@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300;400;500;700&family=League+Spartan:wght@400;500;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #EFFAFA;
+    color: #2B3939;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+}
+
+.search-box .clear {
+    color: #7C8F8F;
+    padding-right: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.search-box .clear:hover {
+    text-decoration: underline;
+    color: #5CA5A5;
+}
+
+.search-box {
+    box-shadow: 0 7px 10px 3px rgba(150, 150, 150, 0.2);
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.closeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.45rem;
+    background-size: 22px;
+    background: #5CA5A5 center no-repeat;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: .5rem;
+}
+
+.closeBtn:hover {
+    cursor: pointer;
+    background: #2B3939 center no-repeat;
+}
+
+.closeBtn img {
+    width: 20px;
+    height: auto;
+}
+
+.header-bg {
+    height: 156px;
+    width: 100%;
+    background: #5CA5A5 url(./images/bg-header-desktop.svg) center no-repeat;
+    background-size: cover;
+    margin-bottom: 4.6875em;
+}
+
+.filtered-item {
+    display: inline-flex;
+    align-items: center;
+    background-color: hsl(180, 31%, 95%);
+    padding-left: 0.65rem;
+    border-radius: 4px;
+    font-size: 1em;
+    width: max-content;
+    font-weight: 700;
+}
+
+.post-card {
+    box-shadow: 0 7px 10px 3px rgba(150, 150, 150, 0.2);
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 1.25rem;
+    width: 80%;
+    margin: 0 auto 2em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-details span.new {
+    margin-right: 8px;
+}
+
+.post-details span.company {
+    margin-right: 1rem;
+}
+
+.job-skills {
+    margin-right: -0.99em;
+}
+
+.job-list img {
+    width: 88px;
+    height: 88px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    color: #5CA5A5;
+}
+
+.company {
+    color: #5CA5A5;
+    font-size: 1.125em;
+    font-weight: 700;
+}
+
+.new {
+    background-color: #5CA5A5;
+    color: #FFFFFF;
+    border-radius: 1rem;
+    padding: 0.4rem 0.5rem;
+    font-size: .875em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.featured-alert {
+    background-color: #2B3939;
+    color: #FFFFFF;
+    border-radius: 1rem;
+    padding: 0.4rem 0.55rem;
+    font-size: .875em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.tag {
+    background-color: hsl(180, 31%, 95%);
+    padding: 0.65rem;
+    border-radius: 4px;
+    font-size: 1em;
+    width: max-content;
+    margin-right: 1em;
+    font-weight: 700;
+    position: relative;
+}
+
+.tag:hover {
+    cursor: pointer;
+    background-color: #5CA5A5;
+    color: #FFFFFF;
+}
+
+.position{
+    margin-top: 8px;
+}
+
+.position p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1.375rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.position p:hover {
+    color: #5CA5A5;
+    cursor: pointer;
+}
+
+/* experimenting with styles*/
+.jobs__details {
+    margin: 0;
+    padding: 0;
+}
+
+.jobs__details-item {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    color: hsl(180, 8%, 52%);
+    font-size: 18px;
+}
+
+.jobs__details-item::after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: hsl(180, 8%, 52%);
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+.jobs__details-item:last-child::after {
+    display: none;
+}
+/* end of experimenting with styles*/
+
+.post-info {
+    margin-top: 7px;
+}
+
+.post-info ul {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #7C8F8F;
+    margin: 0 0.55em 0 0;
+    padding-left: 0px;
+}
+
+.day {
+    margin-right: 35px;
+}
+
+.day .bullet {
+    margin-right: 17.2px;
+}
+
+.attribution {
+    text-align: center;
+    color: #7C8F8F;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 3rem 0 2rem 0;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: #7C8F8F;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+    color: #5CA5A5;
+}
+
+.horizontal-rule {
+    display: none;
+}
+ul li {
+    margin-bottom: 1rem;
+}
+.search-box ul{
+    padding-left: 0;
+}
+
+.search-item {
+    display: inline-block;
+  }
+
+.none {
+    display: none !important;
+}
+
+
+
+/* Mobile Responsiveness */
+@media screen and (min-width:320px) and (max-width:899px) {
+    .header-bg {
+        display: none;
+    }
+
+    .horizontal-line {
+        display: flex;
+        border-bottom: 1px solid #B7C4C4;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .mobile-header {
+        height: 156px;
+        width: 100%;
+        background: #5CA5A5 url(./images/bg-header-mobile.svg) center no-repeat;
+        background-size: cover;
+        margin-bottom: 2rem;
+    }
+
+    .search-box ul {
+        margin: .5rem;
+        padding-left: 0;
+
+    }
+    .search-box ul li {
+        margin-bottom: .4rem;
+    }
+
+    .search-box {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 7px 10px 3px rgba(150, 150, 150, 0.2);
+        background-color: #FFFFFF;
+        border-radius: 0.312rem;
+        padding: 0.125rem;
+        width: 80%;
+        margin: 0 auto;
+        top: -4rem;
+    }
+
+    .filtered-item {
+        padding-left: 0.65rem;
+        border-radius: 4px;
+        font-size: 1em;
+        width: max-content;
+        justify-content: space-between;
+        margin: .5rem;
+    }
+
+    .post-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .job-icon {
+        position: absolute;
+        top: -1.5rem;
+        left: 1.3rem;
+    }
+
+    .job-icon img {
+        width: 3rem;
+        height: auto;
+        position: absolute;
+    }
+
+    .post-card {
+        position: relative;
+        margin-top: 2.5rem;
+    }
+
+    .post-details {
+        margin-top: .562rem;
+        margin-bottom: .562rem;
+    }
+
+    .job-details {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .company {
+        font-size: 1.125rem;
+    }
+
+    .position {
+        font-size: 0.9375rem;
+        margin-bottom: .562rem;
+    }
+
+    .position p {
+        line-height: 1.5;
+    }
+
+    .jobs__details-item{
+        font-size: 1rem;
+    }
+
+    .jobs__details-item::after {
+        content: "";
+        margin: 5px 9px;
+    }
+
+    .job-skills ul {
+        padding-left: 0;
+    }
+}
+
+/* End Mobile Responsiveness */
+
+@media only screen and (min-width:900px) and (max-width:1126px) {
+
+    .search-box ul {
+        padding-left: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+    .search-box li{
+        margin-bottom: 0;    
+    }
+
+    .search-box {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 7px 10px 3px rgba(150, 150, 150, 0.2);
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        padding: 1rem;
+        width: 80%;
+        margin: 0 auto;
+        top: -6.875rem;
+    }
+
+    .post-card {
+        align-items: center;
+    }
+
+    .job-list img {
+        margin-right: 1.5rem;
+    }
+
+    .job-details {
+        width: inherit;
+    }
+
+    .job-skills {
+        width: inherit;
+    }
+
+    .job-skills ul {
+        padding-left: 0;
+    }
+
+    .position p {
+        line-height: 1.725;
+    }
+
+}
+
+@media only screen and (min-width:1127px) {
+    .search-box {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        top: -6.875rem;
+    }
+
+    .search-box ul {
+        margin-bottom: 0;
+
+    }
+    
+    .filtered-item {
+        width: max-content;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: .5rem;
+        font-weight: 700;
+    }
+
+    .job-details {
+        flex-grow: 1;
+        margin-left: 2rem;
+    }
+
+}
+
