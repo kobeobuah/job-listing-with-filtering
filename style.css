@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300;400;500;700&family=League+Spartan:wght@400;500;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto&display=swap');
 
+:root {
+    --primary-color: #5CA5A5;
+    --white-color:  #FFFFFF;
+    --tag-color: hsl(180, 31%, 95%);
+    --dark-color: #2B3939;
+    --grey-color: #7C8F8F;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,13 +16,13 @@
 body {
     box-sizing: border-box;
     background-color: #EFFAFA;
-    color: #2B3939;
+    color: var(--dark-color);
     font-family: 'League Spartan', sans-serif;
     font-weight: 500;
 }
 
 .search-box .clear {
-    color: #7C8F8F;
+    color: var(--grey-color);
     padding-right: 1rem;
     font-weight: 700;
     cursor: pointer;
@@ -22,12 +30,12 @@ body {
 
 .search-box .clear:hover {
     text-decoration: underline;
-    color: #5CA5A5;
+    color: var(--primary-color);
 }
 
 .search-box {
     box-shadow: 0 7px 10px 3px rgba(150, 150, 150, 0.2);
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
     border-radius: 5px;
     padding: 1rem;
     width: 80%;
@@ -41,7 +49,7 @@ body {
     align-items: center;
     padding: 0.45rem;
     background-size: 22px;
-    background: #5CA5A5 center no-repeat;
+    background: var(--primary-color) center no-repeat;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     margin-left: .5rem;
@@ -49,7 +57,7 @@ body {
 
 .closeBtn:hover {
     cursor: pointer;
-    background: #2B3939 center no-repeat;
+    background: var(--dark-color) center no-repeat;
 }
 
 .closeBtn img {
@@ -60,7 +68,7 @@ body {
 .header-bg {
     height: 156px;
     width: 100%;
-    background: #5CA5A5 url(./images/bg-header-desktop.svg) center no-repeat;
+    background: var(--primary-color) url(./images/bg-header-desktop.svg) center no-repeat;
     background-size: cover;
     margin-bottom: 4.6875em;
 }
@@ -68,7 +76,7 @@ body {
 .filtered-item {
     display: inline-flex;
     align-items: center;
-    background-color: hsl(180, 31%, 95%);
+    background-color: var(--tag-color);
     padding-left: 0.65rem;
     border-radius: 4px;
     font-size: 1em;
@@ -78,7 +86,7 @@ body {
 
 .post-card {
     box-shadow: 0 7px 10px 3px rgba(150, 150, 150, 0.2);
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
     border-radius: 5px;
     padding: 1.25rem;
     width: 80%;
@@ -108,18 +116,18 @@ body {
 ul li {
     list-style: none;
     display: inline-block;
-    color: #5CA5A5;
+    color: var(--primary-color);
 }
 
 .company {
-    color: #5CA5A5;
+    color: var(--primary-color);
     font-size: 1.125em;
     font-weight: 700;
 }
 
 .new {
-    background-color: #5CA5A5;
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     border-radius: 1rem;
     padding: 0.4rem 0.5rem;
     font-size: .875em;
@@ -128,8 +136,8 @@ ul li {
 }
 
 .featured-alert {
-    background-color: #2B3939;
-    color: #FFFFFF;
+    background-color: var(--dark-color);
+    color: var(--white-color);
     border-radius: 1rem;
     padding: 0.4rem 0.55rem;
     font-size: .875em;
@@ -138,7 +146,7 @@ ul li {
 }
 
 .tag {
-    background-color: hsl(180, 31%, 95%);
+    background-color: var(--tag-color);
     padding: 0.65rem;
     border-radius: 4px;
     font-size: 1em;
@@ -150,8 +158,8 @@ ul li {
 
 .tag:hover {
     cursor: pointer;
-    background-color: #5CA5A5;
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 .position{
@@ -167,11 +175,10 @@ ul li {
 }
 
 .position p:hover {
-    color: #5CA5A5;
+    color: var(--primary-color);
     cursor: pointer;
 }
 
-/* experimenting with styles*/
 .jobs__details {
     margin: 0;
     padding: 0;
@@ -198,7 +205,6 @@ ul li {
 .jobs__details-item:last-child::after {
     display: none;
 }
-/* end of experimenting with styles*/
 
 .post-info {
     margin-top: 7px;
@@ -207,7 +213,7 @@ ul li {
 .post-info ul {
     font-size: 1.125rem;
     font-weight: 400;
-    color: #7C8F8F;
+    color: var(--grey-color);
     margin: 0 0.55em 0 0;
     padding-left: 0px;
 }
@@ -222,20 +228,10 @@ ul li {
 
 .attribution {
     text-align: center;
-    color: #7C8F8F;
+    color: var(--grey-color);
     font-size: 1rem;
     font-weight: 400;
     margin: 3rem 0 2rem 0;
-}
-
-.attribution a {
-    text-decoration: none;
-    color: #7C8F8F;
-}
-
-.attribution a:hover {
-    text-decoration: underline;
-    color: #5CA5A5;
 }
 
 .horizontal-rule {
@@ -275,7 +271,7 @@ ul li {
     .mobile-header {
         height: 156px;
         width: 100%;
-        background: #5CA5A5 url(./images/bg-header-mobile.svg) center no-repeat;
+        background: var(--primary-color) url(./images/bg-header-mobile.svg) center no-repeat;
         background-size: cover;
         margin-bottom: 2rem;
     }
@@ -294,7 +290,7 @@ ul li {
         justify-content: space-between;
         align-items: center;
         box-shadow: 0 7px 10px 3px rgba(150, 150, 150, 0.2);
-        background-color: #FFFFFF;
+        background-color: var(--white-color);
         border-radius: 0.312rem;
         padding: 0.125rem;
         width: 80%;
@@ -390,7 +386,7 @@ ul li {
         justify-content: space-between;
         align-items: center;
         box-shadow: 0 7px 10px 3px rgba(150, 150, 150, 0.2);
-        background-color: #FFFFFF;
+        background-color: var(--white-color);
         border-radius: 5px;
         padding: 1rem;
         width: 80%;
