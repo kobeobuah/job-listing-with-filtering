@@ -280,10 +280,10 @@ jobSkills.forEach(jobSkill => {
 const clearButton = document.querySelector('.clear');
 
 function clearFiltered() {
-    jobListContainer.querySelectorAll('.card.none').forEach(card => card.classList.remove('none'));
+    jobListContainer.querySelectorAll('.post-card.none').forEach(card => card.classList.remove('none'));
   jobFilter = [];
   searchBox.parentElement.style.display = 'none';
-  window.location.reload();
+  // window.location.reload();
 }
 
 clearButton.addEventListener('click', clearFiltered);
